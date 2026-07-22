@@ -1,3 +1,5 @@
+
+
 # Use input() to ask the user for their age. 
 # Convert it to an integer, then use if/elif/else with 'and' to check ranges and print which category they fall into:
 # Age range	Category
@@ -6,7 +8,7 @@
 # 18-64 	Adult
 # 65andUp  	Senior
 
-age = int(input("Please enter your age: "))
+age = int(input("Enter your age: "))
 
 if age >= 0 and age <= 12:
     print("You are a Child.")

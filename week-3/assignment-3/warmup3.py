@@ -1,3 +1,5 @@
+
+
 # Write a script that evaluates the five expressions below and prints each one with its result. 
 # Add a comment on each line explaining why the result is what it is:
 # print(not True and False)

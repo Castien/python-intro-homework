@@ -11,19 +11,22 @@
 
 print("Welcome to your Own Personal Cynical Planner Program.")
 
-answer = input("I am so excited to plan your day. Can't you tell? ").strip().lower()
-if answer == "yes" or answer == "y": 
-    print("You're so great at reading the room...")
-elif answer == "no" or answer == "n":
-    print("No? Sorry, let me add some enthusiasm. ~Yay.~")
-else:
-    print("Maybe it's time to touch some grass this week.")
+# AIRHUB doesn't have a sense of adventure.
+# Extra code for practice and because I'm weird:
+# answer = input("I am so excited to plan your day. Can't you tell? ").strip().lower()
+# if answer == "yes" or answer == "y": 
+#     print("You're so great at reading the room...")
+# elif answer == "no" or answer == "n":
+#     print("No? Sorry, let me add some enthusiasm. ~Yay.~")
+# else:
+#     print("Maybe it's time to touch some grass this week.")
+# print("Let's get this over with.")
 
-print("Let's get this over with.")
 day = input("What day of the week is it? ").strip().lower()
 time = input("What time of day is it? ").strip().lower()
 
-invalid_time = (f"Sorry, {day} is not a valid input. I only recognize the time of day as 'morning', 'afternoon', 'evening' or 'night'.")
+# AIRHUB also didn't like my time saving measure.
+# invalid_time = (f"Sorry, {day} is not a valid input. I only recognize the time of day as 'morning', 'afternoon', 'evening' or 'night'.")
 
 if day == "monday":
     if time == "morning":
@@ -35,7 +38,8 @@ if day == "monday":
     elif time == "night":
         print("Celebrate surviving another day of questionable decisions with Netflix and denial.")
     else:
-        print(f"{invalid_time}")
+        print(f"Sorry, {day} is not a valid input. I only recognize the time of day as 'morning', 'afternoon', 'evening' or 'night'.")
+        # print(f"{invalid_time}")
 elif day == "tuesday":
     if time == "morning":
         print("Breakfast is the perfect time for you to consider escaping to a cottage in the woods and living like a hermit.")
@@ -46,7 +50,8 @@ elif day == "tuesday":
     elif time == "night":
         print("Recover from the day by staring dramatically at the ceiling.")
     else:
-        print(f"{invalid_time}")
+        print(f"Sorry, {day} is not a valid input. I only recognize the time of day as 'morning', 'afternoon', 'evening' or 'night'.")
+        # print(f"{invalid_time}")
 elif day == "wednesday":
     if time == "morning":
         print("Check your schedule and begin negotiating with reality.")
@@ -57,7 +62,8 @@ elif day == "wednesday":
     elif time == "night":
         print("Celebrate making it halfway through the week with a completely unnecessary snack.")
     else:
-        print(f"{invalid_time}")
+        print(f"Sorry, {day} is not a valid input. I only recognize the time of day as 'morning', 'afternoon', 'evening' or 'night'.")
+        # print(f"{invalid_time}")
 elif day == "thursday":
     if time == "morning":
         print("Look in the mirror and congratulate yourself for loading successfully.")
@@ -68,7 +74,8 @@ elif day == "thursday":
     elif time == "night":
         print("Have an existential crisis before bed. It's tradition.")
     else:
-        print(f"{invalid_time}")
+        print(f"Sorry, {day} is not a valid input. I only recognize the time of day as 'morning', 'afternoon', 'evening' or 'night'.")
+        # print(f"{invalid_time}")
 elif day == "friday":
     if time == "morning":
         print("Meditate to achieve inner peace. Immediately lose it when you check emails.")
@@ -79,7 +86,8 @@ elif day == "friday":
     elif time == "night":
         print("Pretend tomorrow is Friday. Enjoy the illusion.")
     else:
-        print(f"{invalid_time}")
+        print(f"Sorry, {day} is not a valid input. I only recognize the time of day as 'morning', 'afternoon', 'evening' or 'night'.")
+        # print(f"{invalid_time}")
 elif day == "saturday":
     if time == "morning":
         print("Rejoice. It is the weekend. You don't have to be anywhere, do you? Do you still have friends offline?")
@@ -90,7 +98,8 @@ elif day == "saturday":
     elif time == "night":
         print("Do absolutely nothing. You've earned the privilege of being useless for a while.")
     else:
-        print(f"{invalid_time}")
+        print(f"Sorry, {day} is not a valid input. I only recognize the time of day as 'morning', 'afternoon', 'evening' or 'night'.")
+        # print(f"{invalid_time}")
 elif day == "sunday":
     if time == "morning":
         print("Sleep in until your adulting responsibilities start filing complaints.")
@@ -101,9 +110,12 @@ elif day == "sunday":
     elif time == "night":
         print("Now is the perfect time to remember a task you forgot to do because your brain was on 'Do Not Disturb' all weekend.")
     else:
-        print(f"{invalid_time}")
+        print(f"Sorry, {day} is not a valid input. I only recognize the time of day as 'morning', 'afternoon', 'evening' or 'night'.")
+        # print(f"{invalid_time}")
 else:
-    print("The inputed day is invalid. Are you from this planet? I only recognize Earth weekdays.")
+    # print("The inputed day is invalid. Are you from this planet? I only recognize Earth weekdays.")
+    print("Sorry, I don't recognize that day. Try: Monday, Tuesday, Wednesday...")
+    
 
-print("*~Throws confetti~*")
+# print("*~Throws confetti~*")
 

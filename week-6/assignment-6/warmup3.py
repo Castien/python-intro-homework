@@ -14,12 +14,16 @@
 # Define a variable inside a function:
 # def functional_function():
 #     does_a_thing = "I do a thing!"
-#     print(does_a_thing)
+#     
 
 # Try to access it outside the function and show the NameError — paste the error in a comment:
 # then remove or comment out the line that causes it.
+
 # functional_function()
 # NameError: name 'functional_function' is not defined
+
+# print(does_a_thing)
+# NameError: name 'does_a_thing' is not defined
 
 # return the value from the function
 def functional_function():

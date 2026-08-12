@@ -147,42 +147,7 @@ def main():
         # if user inputs invalid menu option
         else:
             print("Invalid option. Please choose 1-5.")
-
-
 # Call main() at the bottom of the file.
 main()
-
-
-# Run test results, without the repeated menu:
-
-# === Number Cruncher ===
-# 1. Find minimum
-# 2. Find maximum
-# 3. Search for a number
-# 4. Sort the list
-# 5. Quit
-
-# Choose an option (1-5): 1
-# Minimum value: 3
-
-# Choose an option (1-5): 2
-# Maximum value: 93
-
-# Choose an option (1-5): 3
-# Enter a number to search for: 50
-# Not found
-
-# Choose an option (1-5): 3
-# Enter a number to search for: 8
-# Found at index 7
-
-# Choose an option (1-5): 4
-# Sorted list: [3, 5, 8, 14, 17, 22, 29, 31, 40, 42, 47, 55, 59, 61, 66, 74, 78, 83, 86, 93]
-
-# Choose an option (1-5): 6
-# Invalid option. Please choose 1-5.
-
-# Choose an option (1-5): 5
-# Goodbye!
 
 

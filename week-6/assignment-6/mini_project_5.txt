@@ -1,0 +1,95 @@
+# list from numbers.py
+numbers = [42, 17, 83, 5, 61, 29, 74, 8, 55, 93, 31, 66, 14, 47, 78, 3, 59, 22, 86, 40]
+
+# loops menu until the user chooses Quit
+while True:
+    print("=== Number Cruncher ===")
+    print("1. Find minimum")
+    print("2. Find maximum")
+    print("3. Search for a number")
+    print("4. Sort the list")
+    print("5. Quit")
+
+    choice = input("Choose an option (1-5): ")
+
+    # Find minimum — loop through the list and track the smallest value. Do not use Python's built-in min().
+    if choice == "1":
+        # first number is starting smallest value
+        minimum = numbers[0]
+
+        # loops to check through every number in the list
+        for number in numbers:
+            if number < minimum:
+                minimum = number
+
+        print(f"Minimum value: {minimum}")
+
+
+    # Find maximum — same approach, tracking the largest value. Do not use max().
+    elif choice == "2":
+        # first number is starting largest value
+        maximum = numbers[0]
+
+        # loops to check through every number in the list
+        for number in numbers:
+            if number > maximum:
+                maximum = number
+
+        print(f"Maximum value: {maximum}")
+
+
+    # Search — ask the user for a number, then implement a linear search loop. Print the index if found, or a "not found" message.
+    elif choice == "3":
+        search_num = int(input("Enter a number to search for: "))
+
+        found = False
+
+        # loops to check each index in list for number, updates found and prints message if located
+        for i in range(len(numbers)):
+            if numbers[i] == search_num:
+                print(f"{search_num} found at index {i}.")
+                found = True
+                break
+
+        # prints if loop fails to find number
+        if not found:
+            print(f"{search_num} was not found in the list.")
+
+
+    # Sort — implement bubble sort: repeatedly loop through adjacent pairs, swap if out of order, and repeat until no swaps occur. 
+    # Print the sorted list. Do not use sorted() or .sort().
+    elif choice == "4":
+        # make copy of numbers list and store in sorted_num list
+        sorted_num = numbers[:]
+
+        # repeats until all index positions have been swapped
+        while True:
+            swapped = False
+
+            # compares pair of numbers next to eachother
+            for i in range(len(sorted_num) - 1):
+                # swap if the first number is bigger than the second
+                if sorted_num[i] > sorted_num[i + 1]:
+                    temp = sorted_num[i]
+                    sorted_num[i] = sorted_num[i + 1]
+                    sorted_num[i + 1] = temp
+
+                    # if swapped, switches to true, loops again
+                    swapped = True
+
+            # if none were swapped, ends loop and prints the sorted_num list
+            if not swapped:
+                break
+
+        print(f"Sorted list: {sorted_num}")
+
+
+    # Quit — print a goodbye message and exit the loop.
+    elif choice == "5":
+        print("Goodbye!")
+        break
+
+
+    # if user inputs invalid menu option
+    else:
+        print("Invalid option. Please choose 1-5.")
